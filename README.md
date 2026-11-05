@@ -52,7 +52,7 @@ O script em `rootfs/usr/local/bin/agy.sh`:
 ### Construindo a Imagem `agy-runtime`
 
 ```bash
-docker build --build-arg GIT_SHA=$(git rev-parse --short HEAD) -t agy-runtime:latest .
+docker build -t agy-runtime:latest .
 ```
 
 ### Executando o `agy-runtime`

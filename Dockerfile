@@ -13,10 +13,6 @@ USER agent
 
 RUN agy plugin install https://github.com/uaiso-serious/agy-langfuse-plugin
 
-# SHA do commit do build (docker build --build-arg GIT_SHA=$(git rev-parse --short HEAD))
-ARG GIT_SHA=unknown
-ENV RUNNER_IMAGE_SHA=$GIT_SHA
-
 WORKDIR /workspace
 
 CMD ["agy.sh"]
